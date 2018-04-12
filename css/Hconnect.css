@@ -2,6 +2,7 @@
 
 body{
 	margin: 0;
+	font-family: 'Exo', sans-serif;
 }
 
 .container{
@@ -12,7 +13,8 @@ body{
 
 .container-fluid {
 	width: 100%;
-	margin: auto;	
+	margin: auto;
+	font-family: 'Exo', sans-serif;
 }
 
 .contain{
