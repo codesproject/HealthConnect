@@ -707,7 +707,7 @@ label, .txtNormal{
 
 .dashHolder {
 	background: #f7f7f7;
-	height: 94%;
+	
     padding: 35px;
 }
 .profileImg img{
@@ -799,11 +799,13 @@ label, .txtNormal{
 }
 
 .logoBtm {
-	margin: auto;
-    margin-left: 10%;
-    margin-top: 50%;
+	    margin: auto;
+    /* margin-left: 10%; */
+    /* margin-top: 50%; */
     text-align: center;
-    width: 70%;
+    width: 21%;
+    bottom: 0;
+    position: absolute;
 }
 
 .dashHolderBox{
@@ -861,7 +863,7 @@ border-radius: 1px;}
 .dashRecnt {
 	    background-color: white;
     flex-basis: 49%;
-	    height: 300px;
+	
 }
 .recntTop {
 	    padding: 15px 20px;
@@ -925,9 +927,15 @@ border-radius: 1px;}
 }
 
 .iconTop>div.lines>div {
-	      width: 1px;
-    padding: 15px 0;
+	    width: 1px;
+    padding: 0;
+    height: 100%;
     margin: auto;
-    margin-top: 13px;
     background: #00aaff;
+}
+
+.dashGraph>img {
+	    float: right;
+    padding: 15px;
+    padding-top: 0;	
 }
