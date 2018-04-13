@@ -15,6 +15,7 @@ body{
 	width: 100%;
 	margin: auto;
 	font-family: 'Exo', sans-serif;
+	    padding: 0 !important;
 }
 
 .contain{
@@ -201,12 +202,12 @@ body{
 }
 
 .stBtn{
-	border-radius: 4px;
-    background-color: #006bc1;
+	    border-radius: 4px;
+    background-color: #0381c0;
     color: #FFFFFF;
     line-height: 30px;
     padding: 5px 25px;
-    border: 1px solid #006bc1;
+    border: 1px solid #0381c0;
     margin-top: 15px;
     font-family: 'Exo', sans-serif;
     transition: all .4s;
@@ -232,7 +233,7 @@ body{
 
 .containerBox{
 	margin-top: 8%;
-    background-image: linear-gradient(to bottom, #2254ab, #02164c);
+	background-image: linear-gradient(to bottom, #2254ab, #0381c0);
    /* display: flex;
     justify-content: flex-end;
     align-items: center; */
@@ -344,6 +345,11 @@ article{
 	
 }
 
+.footerSection div:first-child {
+    
+    text-align: left;
+}
+
 @media (min-width: 524px) {
 	
 	.footerSection {
@@ -364,7 +370,7 @@ article{
     cursor: pointer;
     font-size: 13px;
     text-align: center;
-    color: #006bc1;
+    color: #0381c0;
 		background: transparent;
 		min-width: 90px;
 }
@@ -569,7 +575,7 @@ label, .txtNormal{
 	}
 
 	.logoimg img{
-		width: 120px;
+		width: 200px;
 	}
 
 
@@ -642,7 +648,7 @@ label, .txtNormal{
 
 .dshBrdLeft{
 	background:  #0381c0;
-	    padding: 14.5px 5px;
+	/*    padding: 14px 5px; */
 	
 }
 
@@ -663,6 +669,11 @@ label, .txtNormal{
 	
 }
 
+
+.iconTop div:first-child, .iconTop div:last-child  {
+	padding: 14px 0;
+}
+
 .leftCnt{
 	flex: 1;
 }
@@ -672,8 +683,7 @@ label, .txtNormal{
 }
 
 .profileCorner{
-	/*	height: 500px;*/
-	background: #FCFBFB;
+	background: #ffffff;
 }
 
 .dshBrdRight input[type=search] {
@@ -696,8 +706,9 @@ label, .txtNormal{
 }
 
 .dashHolder {
-	background: #D8D8D8;
+	background: #f7f7f7;
 	height: 94%;
+    padding: 35px;
 }
 .profileImg img{
 	border-radius: 150px;
@@ -767,9 +778,11 @@ label, .txtNormal{
 	border-radius: 4px;
     background-color: #00aaff;
     padding: 7px 30px;
-    color: #eaeaea;
-    font-weight: 600;
+    color: #fdfdfd;
+    font-weight: 500;
     margin-top: 35px;
+    font-family: ubuntu;
+    font-size: 15px;
     width: 80%;
     margin-left: 10%;
     box-shadow: 0 0.5px 2px 0 rgba(0, 0, 0, 0.5);
@@ -781,9 +794,8 @@ label, .txtNormal{
 }
 
 .lines {
-  width: 1.5px;
-  height: 21px;
-  border: solid 0.8px #00aaff;
+      font-size: 19px;
+    color: #bbe3f7;
 }
 
 .logoBtm {
@@ -792,4 +804,130 @@ label, .txtNormal{
     margin-top: 50%;
     text-align: center;
     width: 70%;
+}
+
+.dashHolderBox{
+	display: flex;
+    justify-content: space-between;
+	margin-top: 30px;
+}
+
+.dashHolderBox>div {
+	font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+        padding: 10px 20px;
+    background-color: #fff;
+    flex-basis: 23.3%;
+border-radius: 1px;}
+
+.dashLctn {
+   font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: #25a5e4;
+    font-size: 13px;
+	
+}
+
+.dashtxtHeader {
+   font-family: 'Ubuntu', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    text-align: center;
+    color: #868686;
+    margin: 10px;
+}
+
+.dashtxtBox {
+    font-size: 25px;
+    color: #737373;
+    font-weight: 200;
+    padding: 15px 5px 0;
+}
+
+.dashtxtsm {
+	font-size: 22px;
+    color: #616161;
+    font-weight: 400;
+}
+
+.dashactivBox {
+	font-family: 'Ubuntu', sans-serif;
+	    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+	
+}
+
+.dashRecnt {
+	    background-color: white;
+    flex-basis: 49%;
+	    height: 300px;
+}
+.recntTop {
+	    padding: 15px 20px;
+    text-align: left;
+    color: #505050;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.dashMod .recntTop {
+	background-color: #fff;
+	
+}
+
+.dashMod {
+
+    flex-basis: 49%;
+}
+
+.dashLnMenu {
+     text-align: right;
+    font-size: 1.6em;
+    padding: 0;
+    color: #a6a9a9;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    /* height: 13%; */
+}
+
+.dshinfoBox {
+	    display: flex;
+    padding: 10px;
+    font-size: 16px;
+    color: #6f6f6f;
+    font-weight: 400;	
+}
+
+.dshinfoTxt {
+	flex: 4;	
+}
+
+.dshinfoTxt>div>span {
+	font-weight: 500;
+    color: #525252;
+	
+}
+
+.infoImg {
+	flex: 1;
+	text-align: center;
+	
+}
+
+.dshinfoTxt div:last-child {
+	font-size: 14px;
+}
+
+.dashMod .dshinfoBox:nth-child(odd) {
+    background-color: white;
+}
+
+.iconTop>div.lines>div {
+	      width: 1px;
+    padding: 15px 0;
+    margin: auto;
+    margin-top: 13px;
+    background: #00aaff;
 }
