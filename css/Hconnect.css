@@ -97,6 +97,11 @@ body{
 
 @media (max-width: 450px) {
 	
+	
+	.logoimg img {
+    width: 240px !important;
+}
+	
 	.menuHeader {
     display: block; 
 	}
