@@ -654,7 +654,7 @@ label, .txtNormal{
 
 .dshBrdRight{
 	background: #00a9fd;
-	   padding: 12px 5px;
+	   padding: 10.5px 5px;
 	  text-align: center;
 }
 
@@ -671,7 +671,16 @@ label, .txtNormal{
 
 
 .iconTop div:first-child, .iconTop div:last-child  {
-	padding: 14px 0;
+	padding: 13px 0;
+	transition: all .4s;
+	cursor: pointer;
+	border-bottom: 3px solid #fff;
+}
+
+.iconTop div:first-child:hover, .iconTop div:last-child:hover  {
+	    background-color: #98bccd;
+    border-bottom: 3px solid #0381c0;
+	
 }
 
 .leftCnt{
@@ -687,16 +696,16 @@ label, .txtNormal{
 }
 
 .dshBrdRight input[type=search] {
-       border: 1px solid #349cd1;
-    padding: 5px 10px;
-    border-radius: 15px;
-    width: 24%;
+        border: 1px solid #349cd1;
+    padding: 3px 10px;
+    border-radius: 25px;
+    width: 25%;
     background-color: #0381c0;
     background-image: url(../img/search.png);
     background-repeat: no-repeat;
     background-position: left;
     background-origin: content-box;
-	transition: width .4s ease-in-out;
+    transition: width .4s ease-in-out;
 }
 
 .dshBrdRight input[type=search]:focus {
@@ -750,7 +759,7 @@ label, .txtNormal{
     text-align: left;
     padding: 8px 30px;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.04em;
+    font-size: .85em;
     font-weight: 500;
     color: #909090;
 }
@@ -796,16 +805,14 @@ label, .txtNormal{
 .lines {
       font-size: 19px;
     color: #bbe3f7;
+	flex: none !important;
 }
 
 .logoBtm {
-	    margin: auto;
-    /* margin-left: 10%; */
-    /* margin-top: 50%; */
+	margin: auto;
+    margin-top: 60%;
     text-align: center;
-    width: 21%;
-    bottom: 15px;
-    position: absolute;
+    width: 90%;
 }
 
 .dashHolderBox{
@@ -817,7 +824,7 @@ label, .txtNormal{
 .dashHolderBox>div {
 	font-family: 'Ubuntu', sans-serif;
     text-align: center;
-        padding: 10px 20px;
+        padding: 10px 10px;
     background-color: #fff;
     flex-basis: 23.3%;
 border-radius: 1px;}
@@ -840,7 +847,7 @@ border-radius: 1px;}
 }
 
 .dashtxtBox {
-    font-size: 25px;
+    font-size:1.5rem;
     color: #737373;
     font-weight: 200;
     padding: 15px 5px 0;
@@ -886,7 +893,7 @@ border-radius: 1px;}
 
 .dashLnMenu {
      text-align: right;
-    font-size: 1.6em;
+    font-size: 1.2em;
     padding: 0;
     color: #a6a9a9;
     top: 0;
@@ -942,9 +949,70 @@ border-radius: 1px;}
 }
 
 .logoBtm img{
-	width: 60%;
+	width: 80%;
 }
 
 .dashGraph {
 	    margin-top: -30px;
 }
+
+/* Mobile responsiveness */
+
+@media  (max-width:1000px) {
+	.dashtxtBox {
+		font-size: 1.25rem; }
+}
+
+@media (max-width: 811px) {
+	
+	
+}
+
+@media (max-width: 620px) {
+	
+	.dashHolder {
+    padding: 35px 10px;
+		}
+	
+}
+
+@media (max-width: 1130px) {
+.dashactivBox {
+    
+    flex-wrap: wrap;
+}
+	
+	.dashRecnt {
+		flex-basis: auto;
+	}
+	
+	.dashMod {
+		flex-basis: auto;
+	}
+	
+}
+
+@media (max-width: 1094px) {
+	
+	.dashRecnt {
+		flex-basis: 100%;
+	}
+	
+	.dashMod {
+		flex-basis: 100%;
+		    margin-top: 30px;
+	}
+}
+
+@media (max-width: 881px) {
+	
+	.dashHolderBox>div {
+    flex-basis: 48.3%;
+		margin: 10px 0;
+   }
+	
+	.dashHolderBox {
+    flex-wrap: wrap;
+	}
+}
+
