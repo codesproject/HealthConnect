@@ -842,10 +842,10 @@ background-color: #f3f3f3;
 }
 
 .logoBtm {
-	margin: auto;
-    margin-top: 60%;
+	    margin: auto;
+    margin-top: 50%;
     text-align: center;
-    width: 90%;
+    width: 80%;
 }
 
 .dashHolderBox{
@@ -988,7 +988,7 @@ box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.15);
 }
 
 .logoBtm img{
-	width: 80%;
+	width: 70%;
 }
 
 .dashGraph {
