@@ -1478,8 +1478,8 @@ box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.15);
   }
   /* Slide side body*/
   .side-body {
-    margin-left: 5px;
-   /* margin-top: 70px;*/
+   margin-left: 0px;
+    margin-top: 0px;
     position: relative;
     -moz-animation: bodyslideout 300ms forwards;
     -o-animation: bodyslideout 300ms forwards;
