@@ -2,15 +2,15 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=0">
-<title>Dashboard</title>
+<title>Untitled Document</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
 <link href="css/Hconnect.css" rel="stylesheet" type="text/css">
+
 <link href="https://fonts.googleapis.com/css?family=Exo:400,500,700,900" rel="stylesheet">
 
 <link href="css/fontawesome/css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
-
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
 
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
 
@@ -18,8 +18,19 @@
 
 <body>
 
-<div class="container-fluid dashMain">
-<div class="leftCnt">
+<div class="row">
+    
+    <!-- Menu -->
+    <div class="side-menu">
+    
+    <div class="">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    
+
+    <!-- Main Menu -->
+    <div class="side-menu-container">
+       
+        <div class="leftCnt">
 <div class="dshBrdLeft">
  <div class="iconTop">	
 	<div>
@@ -77,9 +88,34 @@
 	</div>	
 	</div>
 </div>
-<div class="rightCont">
-<div class="dshBrdRight"><input type="search"></div>
+        
+        
+    </div>
+    <!-- /.navbar-collapse -->
+</div>
+    
+    </div>
 
+    <!-- Main Content -->
+    <div class="container-fluid">
+        <div class="side-body">
+          
+           
+           <div class="rightCont">
+	<div class="dshBrdRight">
+	<div class="navbar-header">
+        <div class="brand-wrapper">
+            <!-- Hamburger -->
+            <button type="button" class="navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <!--end  Hamburger -->
+
+        </div>
+
+    </div>
+		<input type="search"></div>
 <div class="dashHolder">
 	
 	<div class="dashLctn">Dashboard</div>
@@ -285,16 +321,33 @@ Electrical Shop</div>
 </div>
 
 	</div>
-	
-	
+           
+       
+        </div>
+    </div>
 </div>
 
 <script src="js/jquery.min.js"></script>
  <script src="js/popper.min.js"></script>
- 
- <script src="js/bootstrap.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+
+
+<script>
+	$(function () {
+    $('.navbar-toggle').click(function () {
+        $('.navbar-nav').toggleClass('slide-in');
+        $('.side-body').toggleClass('body-slide-in');
+       
+
+        /// uncomment code for absolute positioning tweek see top comment in css
+        //$('.absolute-wrapper').toggleClass('slide-in');
+        
+    });
+   
+  
+});
+	</script>
 
 </body>
-
-
 </html>
