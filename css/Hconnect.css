@@ -170,29 +170,35 @@ body{
 	}
     
     .dshBrdRight input[type=search] {
-        width: 35% !important; 
+        width: 40% !important; 
     }
     
     .side-menu-container {
     width: 300px !important;
+    position: fixed;
+    background: #041721;
 }
 }
 
 @media (max-width: 450px) {
 
 	.topHeader {
-    padding: 35px 0px !important;
+    padding: 34px 0px !important;
 	}
 	
 	.topHeader h1 {
-    font-size: 2rem !important;
+    font-size: 1.9rem !important;
 }
+	.boxImgDwn h1{
+		font-size: 2.1rem !important;
+	}
+	
 	.mainHeader {
     margin: 3rem 0 !important;
     margin-top: 2rem !important;
 }
 	.topHeader div.infoTxt {
-    font-size: 14px !important;
+    font-size: 13px !important;
     line-height: 26px !important;
     
 }
