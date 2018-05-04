@@ -1866,7 +1866,6 @@ background: #f3f3f3;
 }
 }
 
-
 .userIcon>img {
 	width: 60px;
 }
@@ -1884,6 +1883,9 @@ background: #f3f3f3;
 	
 	.paginationFooter {
     position: relative;
+		clear: both;
+    right: 0;
+    left: 0;
 		}
 	
 }
