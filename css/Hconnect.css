@@ -478,9 +478,21 @@ article{
 /* Modal CSS update */
 
 .modal-content {
-    background-color: transparent !important;
-    max-width: 400px !important;
+   /* background-color: transparent  !important;*/
+    max-width: 400px;
     margin: 60px auto !important;
+}
+
+.modal-content.modal-lg {
+	max-width: 750px;
+/*	width: 900px;*/
+}
+
+.col-form-label {
+	font-size: .91em;
+    font-family: ubuntu;
+    font-weight: 400;
+    color: #7d7d7d;
 }
 
 .modal-content .card {
@@ -784,9 +796,9 @@ label, .txtNormal{
 }
 
 .dashHolder {
-	background: #f3f3f3;
-	
+	background: #f7f7f7;
     padding: 35px;
+	    height: 805px;
 }
 .profileImg img{
 	border-radius: 150px;
@@ -824,7 +836,7 @@ label, .txtNormal{
 		
 }
 .navDash {
-	    margin: auto;
+	margin: auto;
     text-align: left;
     padding: 12px 17%;
     font-family: 'Ubuntu', sans-serif;
@@ -835,15 +847,16 @@ label, .txtNormal{
     cursor: pointer;
 }
 
+.dshActive {
+	color: #0381c0;
+}
+
 .navDash:hover {
 background-color: #f3f3f3;
     color: #0381c0;}
 
-.navDash:first-child{
-	color: #0381c0;
-}
 
-.navDash:nth-child(6){
+.dashNav .navDash:last-child {
 	color: #b80c09;
 }
 
@@ -890,6 +903,7 @@ background-color: #f3f3f3;
     margin-top: 50%;
     text-align: center;
     width: 80%;
+	    margin-bottom: 5%;
 }
 
 .dashHolderBox{
@@ -1121,11 +1135,18 @@ box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.15);
 }
 
 .dropdown-item {
-    padding: .45rem 3.5rem !important;
-    font-size: .90em ;
+    padding: .55rem 2.5rem !important;
+    font-size: .95em;
     font-family: ubuntu;
+    font-weight: 300;
     color: #777777 !important;
+	    line-height: 25px;
 }
+
+.dropdown-item img{
+padding-right: 5px;}
+
+
 
 .dropdown-item:focus, .dropdown-item:hover, .dropdown-item:hover a{
     text-decoration: none;
@@ -1216,9 +1237,9 @@ box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.15);
 .side-menu {
   position: absolute;
   width: 300px;
-  height: 100%;
-  background-color: #f8f8f8;
-  border-right: 1px solid #e7e7e7;
+/*  height: 100%; */
+  background-color: #fdfdfd;
+ /* border-right: 1px solid #e7e7e7; */
 }
 .side-menu .navbar {
   border: none;
@@ -1564,4 +1585,232 @@ i.fas.fa-bars {
     font-size: 1.1em;
     font-weight: 600;
     color: #d7f0fd;
+}
+
+
+.modHead{
+	display: flex;
+    justify-content: space-between;
+    width: 96%;
+    margin: auto;
+}
+
+.modRight {
+	display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.modHead>.dashLctn {
+	flex: 2;
+}
+
+
+.icoMenu {
+	padding: 0px 18px;
+    background: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    color: #8c8c8c;
+	    height: 30px;
+    
+}
+
+.btnMenu {
+	    border-radius: 15px;
+    background-color: #00a9fd;
+    padding: 1px 18px;
+    font-size: .8em;
+    line-height: 32px;
+    font-weight: 400;
+    color: aliceblue;
+    font-family: 'Ubuntu', sans-serif;
+	transition:  all .5s;
+	cursor: pointer;
+	height: 34px;
+	width: 206px;
+}
+
+.btnMenu:hover {
+	background: #0381C0;
+}
+
+.btnMenu>i.fas.fa-plus-circle {
+	font-size: 1.2em;
+}
+
+.dashViewIcon {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    color: #6b6b6b;
+    font-size: .94em;
+   
+}
+
+
+.sortTxt {
+	 color: #6b6b6b;
+	font-size: .94em;
+	/*flex: 1;*/
+}
+
+
+.recordInfo {
+	margin-top: 70px;
+}
+
+.grdRecordInfo {
+	margin-top: 20px;
+}
+
+
+.tableInfo>thead {
+	    background: #e8e8e8;
+    font-weight: 300 !important;
+    font-family: 'Ubuntu', sans-serif;
+	color: #6f6f6f;
+}
+
+.tableInfo>thead>tr>th{
+	font-weight: 400;
+}
+
+
+.tableInfo>tbody {
+	    background: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+	color: #989898;
+    font-size: .9em;
+}
+
+.tableInfo>tbody>tr {
+	line-height: 40px;
+	border-top: 2px solid #f3f3f3;
+	cursor: pointer;
+	
+}
+
+.tableInfo>tbody>tr:hover {
+background: #f9f8f8;}
+
+.tableInfo>tbody>tr>td>img {
+	width: 40px;
+}
+
+.tableInfo>tbody>tr>td>span {
+background: #f3f3f3;
+    border-radius: 5px;
+    padding: 3px 5px;
+    font-weight: 500;
+    font-size: .86em;
+    color: #717171;
+}
+
+.dshSelected {
+	 background: #00a9fd;
+    border-radius: 15px;
+    padding: 0;
+    margin: 0;
+    width: 15px;
+    height: 15px;
+
+}
+
+.dashViewIcon>.dshSelected {
+    margin: 3px 10px;
+}
+
+
+.icoActive {
+	color: #00a9fd;
+}
+
+.paginationFooter {
+	position: fixed;
+    clear: both;
+    right: 0;
+    left: 0;
+    bottom: 5px;
+    text-align: center;
+    margin: auto;
+    width: 150px;
+    padding: 2px;
+    background: #ffffff;
+    border-radius: 35px;
+    font-size: 1em;
+    color: #777575;
+    font-weight: 400;
+    font-family: ubuntu;
+    box-shadow: 1px 1px 6px 0px #b4b4b4;
+}
+
+.infoNames {
+	    background: #f3f3f3;
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-weight: 500;
+    font-size: .80em;
+    color: #717171;
+}
+
+.nameHead {
+	    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+	margin-bottom: 10px;
+}
+
+.nameHeadDwn {
+	display: flex;
+    justify-content: space-between;
+	margin-top:  30px;
+}
+
+.grdRowName {
+	color: #6c757d!important;
+	font-size: 1rem;
+	font-weight: 5;
+}
+
+.grdRowFirst {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.rowCard {
+	width: 32%;
+}
+
+.userIcon {
+	    text-align: center;
+    width: 100%;
+}
+
+.modal-content.modal-lg>.modal-header {
+	    background: #fafafa;
+
+}
+
+.btn{
+	    padding: .375rem 3.5rem;
+    border-radius: 20px;
+    font-size: .9rem;
+    font-family: ubuntu;
+    font-weight: 500;
+}
+
+.btn-secondary {
+    color: #007bff;
+    background-color: #ffffff;
+    border-color: #007bff;
+}
+
+.dashViewIcon i {
+	cursor: pointer;
+}
+
+.dashViewIcon a {
+	color: #848484;
 }
