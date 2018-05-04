@@ -1889,3 +1889,11 @@ background: #f3f3f3;
 		}
 	
 }
+
+
+label.custom-control-label {
+	
+	font-size: 14px;
+    color: #808080;
+    font-weight: 500;s
+}
