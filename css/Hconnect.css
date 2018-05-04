@@ -65,7 +65,7 @@ body{
 }
 
 .modal {
-	background: #0054978f;
+	background: #005497c4;
 }
 
 @media (max-width: 450px) {
@@ -497,6 +497,7 @@ article{
 .modal-content.modal-lg {
 	max-width: 750px;
 /*	width: 900px;*/
+	    margin-top: 0 !important;
 }
 
 .col-form-label {
@@ -1895,5 +1896,17 @@ label.custom-control-label {
 	
 	font-size: 14px;
     color: #808080;
-    font-weight: 500;s
+    font-weight: 500;
+}
+
+.modrTitle {
+	text-align: center;
+    margin-top: 80px;
+    line-height: 45px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.modal-dialog.modal-lg {
+	margin-top: 0;
 }
