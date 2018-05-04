@@ -175,8 +175,8 @@ body{
     
     .side-menu-container {
     width: 300px !important;
-    position: fixed;
-    background: #041721;
+    /* position: fixed; */
+    background: #fffefe;
 }
 }
 
@@ -1814,3 +1814,14 @@ background: #f3f3f3;
 .dashViewIcon a {
 	color: #848484;
 }
+
+.navDash a{
+    color: #909090;
+}
+
+.navDash a:hover {
+	text-decoration: none;
+	color: #0381c0
+}
+
+

@@ -66,7 +66,7 @@
 		</div>
 	</div>
 	<div class="dashNav">
-		<div class="navDash"><img src="img/dashboard2x.png" />Dashboard</div>
+		<div class="navDash"><a href="dashboard.html"><img src="img/dashboard2x.png" />Dashboard</a></div>
 		<div class="navDash dshActive"><img src="img/user2x.png" /> Moderators</div>
 		<div class="navDash"><img src="img/strategy2x.png" />Plans</div>
 		<div class="navDash"><img src="img/building2x.png" />Oganizations</div>
@@ -129,7 +129,62 @@
     <a class="dropdown-item" href="#"><img src="img/csv-icon.png" /> Export As CSV</a>
     
   </div>
-		 <div class="btnMenu">ADD A NEW MODERATOR <i class="fas fa-plus-circle"></i> </div>
+		 <div class="btnMenu" data-toggle="modal" data-target="#userModerator">ADD A NEW MODERATOR <i class="fas fa-plus-circle"></i> </div>
+	<!--Add moderator Modal pop up-->	 
+	<div class="modal fade" id="userModerator"  role="dialog" aria-labelledby="userModerator" aria-hidden="true">
+  <div class="modal-dialog modal-lg" >
+    <div class="modal-content modal-lg">
+      <div class="modal-header">
+        <div class="userIcon"><img src="img/user.png" /></div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+         <div class="row">
+         	<div class="col-md-6">
+         	<div class="form-group">
+            <label class="col-form-label">First Name:</label>
+            <input type="text" class="form-control" >
+          </div>
+          
+          	<div class="form-group">
+            <label class="col-form-label">Email Address:</label>
+            <input type="text" class="form-control" >
+          </div>	
+         		
+         	</div>
+         	
+         	<div class="col-md-6">
+         	<div class="form-group">
+            <label for="recipient-name" class="col-form-label">Last Name :</label>
+            <input type="text" class="form-control" >
+          </div>
+          
+          	<div class="form-group">
+            <label for="recipient-name" class="col-form-label">Phone Number</label>
+            <input type="text" class="form-control" >
+          </div>	
+         		
+         	</div>
+         	
+         </div>
+          
+         
+            
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Back</button>
+        <button type="button" class="btn btn-primary">Next</button>
+      </div>
+    </div>
+  </div>
+</div>	 
+		 
+	<!-- end Model pop up	--> 
+		 
 		 </div>
 	</div>
 	
