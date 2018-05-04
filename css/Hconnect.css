@@ -1865,3 +1865,20 @@ background: #f3f3f3;
     max-width: 90%;
 }
 }
+
+
+.userIcon>img {
+	width: 60px;
+}
+
+@media only screen and (max-width: 908px )  and (min-width:770px ) {
+	
+	.grdRowFirst {
+    flex-direction: column;
+	}
+	.rowCard {
+        width: 100%;
+    margin-bottom: 20px;
+
+	}
+}
