@@ -1881,4 +1881,9 @@ background: #f3f3f3;
     margin-bottom: 20px;
 
 	}
+	
+	.paginationFooter {
+    position: relative;
+		}
+	
 }
